@@ -10,7 +10,7 @@ public class AmasadorPizzaIntregal implements Amasador{
     
     public void amasar() {
         Logger.getLogger(AmasadorPizzaIntregal.class.getName())
-                .log(Level.INFO, "[@@] Amasando la pizza integral con masa convencional.");
+                .log(Level.INFO, "[@@] Amasando la pizza integral con masa integral.");
         
         //CODIGO DE LLAMADO AL MICROCONTROLADOR
         

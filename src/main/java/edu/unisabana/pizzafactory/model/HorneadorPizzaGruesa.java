@@ -9,7 +9,7 @@ public class HorneadorPizzaGruesa implements Horneador {
     
     public void hornear() {
         Logger.getLogger(HorneadorPizzaGruesa.class.getName())
-            .log(Level.INFO, "[~~] Horneando la pizza gruesa con masa convencional.");
+            .log(Level.INFO, "[~~] Horneando la pizza gruesa con masa gruesa.");
 
         //CODIGO DE LLAMADO AL MICROCONTROLADOR
     }

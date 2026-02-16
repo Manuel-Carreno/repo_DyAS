@@ -6,8 +6,10 @@ import edu.unisabana.pizzafactory.interfaces.PizzaFactory;
 import edu.unisabana.pizzafactory.model.ExcepcionParametrosInvalidos;
 //import edu.unisabana.pizzafactory.model.HorneadorPizzaDelgada;
 import edu.unisabana.pizzafactory.model.Ingrediente;
+import edu.unisabana.pizzafactory.model.PFDelgada;
 //import edu.unisabana.pizzafactory.model.MoldeadorPizzaDelgada;
 import edu.unisabana.pizzafactory.model.PFGruesa;
+import edu.unisabana.pizzafactory.model.PFIntegral;
 import edu.unisabana.pizzafactory.model.Tamano;
 import java.util.Arrays;
 import java.util.logging.Level;
@@ -26,7 +28,10 @@ public class PreparadorPizza {
         try {
             Ingrediente[] ingredientes=new Ingrediente[]{new Ingrediente("queso",1),new Ingrediente("jamon",2)};            
             PreparadorPizza pp=new PreparadorPizza();  
-            PizzaFactory fabrica = new PFGruesa();          
+            PizzaFactory fabrica = new PFGruesa();   
+            //PizzaFactory fabrica = new PFDelgada();
+            //PizzaFactory fabrica = new PFIntegral();
+
             pp.prepararPizza(fabrica, ingredientes, Tamano.MEDIANO);
         } catch (ExcepcionParametrosInvalidos ex) {
             Logger.getLogger(PreparadorPizza.class.getName()).log(Level.SEVERE, "Problema en la preparacion de la Pizza", ex);
